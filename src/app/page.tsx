@@ -1,11 +1,13 @@
 import Link from "next/link";
 
+import style from './style.module.css';
+
 export default function Home() {
   return (
     <>
       <h1>날씨 앱</h1>
-      <ul>
-      <li>
+      <ul className={style.list}>
+        <li>
           <Link href="/seoul">서울</Link>
         </li>
         <li>
@@ -15,6 +17,7 @@ export default function Home() {
           <Link href="/london">런던</Link>
         </li>
       </ul>
+      <button>테스트</button>
     </>
   )
 }
